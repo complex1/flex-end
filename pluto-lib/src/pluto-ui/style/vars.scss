@@ -1,0 +1,146 @@
+:root {
+  @for $i from 1 through 10 {
+    --c-#{$i}: rgba(#{$i*22},#{$i*22} , #{$i*22}, 1);
+  }
+  // --c-1: #212529;
+  // --c-2: #343a40;
+  // --c-3: #495057;
+  // --c-4: #6c757d;
+  // --c-5: #adb5bd;
+  // --c-6: #ced4da;
+  // --c-7: #dee2e6;
+  // --c-8: #e9ecef;
+  // --c-9: #f1f3f5;
+  // --c-10: #f8f9fa;
+
+  --black: #000;
+  --white: #fff;
+
+  --c-red: #e71d36; // also used for error, alert
+  --c-green: #2ecc71; // also used for success
+  --c-blue: #3498db; // also used for primary
+  --c-yellow: #f1c40f; // also used for warning
+
+  --border-1: 1px solid var(--c-6);
+  --border-2: 1px solid var(--c-7);
+  --border-3: 1px solid var(--c-8);
+  --border-4: 1px solid var(--c-9);
+  --border-5: 1px solid var(--c-10);
+
+  --border-radius-1: 0.2rem;
+  --border-radius-2: 0.3rem;
+  --border-radius-3: 0.4rem;
+  --border-radius-4: 0.5rem;
+
+  --font-size-1: 0.8rem;
+  --font-size-2: 0.9rem;
+  --font-size-3: 1rem;
+  --font-size-4: 1.1rem;
+  --font-size-5: 1.2rem;
+  --font-size-6: 1.5rem;
+  --font-size-7: 1.8rem;
+  --font-size-8: 2.1rem;
+
+  --shadow-1: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.25);
+  --shadow-2: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.25);
+  --shadow-3: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.25);
+  --shadow-4: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.25);
+}
+
+body[data-mode="light"] {
+  @for $i from 1 through 10 {
+    --c-#{$i}: rgba(#{$i*22},#{$i*22} , #{$i*22}, 1);
+  }
+  // --c-1: #212529;
+  // --c-2: #343a40;
+  // --c-3: #495057;
+  // --c-4: #6c757d;
+  // --c-5: #adb5bd;
+  // --c-6: #ced4da;
+  // --c-7: #dee2e6;
+  // --c-8: #e9ecef;
+  // --c-9: #f1f3f5;
+  // --c-10: #f8f9fa;
+
+  --black: #000;
+  --white: #fff;
+
+  --c-red: #e71d36; // also used for error, alert
+  --c-green: #2ecc71; // also used for success
+  --c-blue: #3498db; // also used for primary
+  --c-yellow: #f1c40f; // also used for warning
+
+  --border-1: 1px solid var(--c-6);
+  --border-2: 1px solid var(--c-7);
+  --border-3: 1px solid var(--c-8);
+  --border-4: 1px solid var(--c-9);
+  --border-5: 1px solid var(--c-10);
+
+  --border-radius-1: 0.2rem;
+  --border-radius-2: 0.3rem;
+  --border-radius-3: 0.4rem;
+  --border-radius-4: 0.5rem;
+
+  --font-size-1: 0.8rem;
+  --font-size-2: 0.9rem;
+  --font-size-3: 1rem;
+  --font-size-4: 1.1rem;
+  --font-size-5: 1.2rem;
+  --font-size-6: 1.5rem;
+  --font-size-7: 1.8rem;
+  --font-size-8: 2.1rem;
+
+  --shadow-1: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.25);
+  --shadow-2: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.25);
+  --shadow-3: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.25);
+  --shadow-4: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.25);
+}
+
+body[data-mode="dark"] {
+  @for $i from 1 through 10 {
+    --c-#{$i}: rgba(#{255 - $i*22},#{255 - $i*22} , #{255 - $i*22}, 1);
+  }
+  // --c-10: #212529;
+  // --c-9: #343a40;
+  // --c-8: #495057;
+  // --c-7: #6c757d;
+  // --c-6: #adb5bd;
+  // --c-5: #ced4da;
+  // --c-4: #dee2e6;
+  // --c-3: #e9ecef;
+  // --c-2: #f1f3f5;
+  // --c-1: #f8f9fa;
+
+  --black: #fff;
+  --white: #000;
+
+  --c-red: #e71d36; // also used for error, alert
+  --c-green: #2ecc71; // also used for success
+  --c-blue: #3498db; // also used for primary
+  --c-yellow: #f1c40f; // also used for warning
+
+  --border-1: 1px solid var(--c-6);
+  --border-2: 1px solid var(--c-7);
+  --border-3: 1px solid var(--c-8);
+  --border-4: 1px solid var(--c-9);
+  --border-5: 1px solid var(--c-10);
+
+  --border-radius-1: 0.2rem;
+  --border-radius-2: 0.3rem;
+  --border-radius-3: 0.4rem;
+  --border-radius-4: 0.5rem;
+
+  --font-size-1: 0.8rem;
+  --font-size-2: 0.9rem;
+  --font-size-3: 1rem;
+  --font-size-4: 1.1rem;
+  --font-size-5: 1.2rem;
+  --font-size-6: 1.5rem;
+  --font-size-7: 1.8rem;
+  --font-size-8: 2.1rem;
+
+  --shadow-1: 0 0.1rem 0.2rem rgba(255, 255, 255, 0.25);
+  --shadow-2: 0 0.2rem 0.4rem rgba(255, 255, 255, 0.25);
+  --shadow-3: 0 0.3rem 0.6rem rgba(255, 255, 255, 0.25);
+  --shadow-4: 0 0.4rem 0.8rem rgba(255, 255, 255, 0.25);
+}

@@ -1,0 +1,67 @@
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  color: var(--c-3);
+  label {
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 0.2em;
+  }
+  input {
+    border: 1px solid var(--c-5);
+    border-radius: 0.5em;
+    padding: 0.4em 0.5em;
+    font-size: 1em;
+    font-family: poppins;
+    background-color: transparent;
+    color: var(--c-2);
+    &:focus {
+      outline: none;
+      border-color: var(--c-1);
+    }
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    &::placeholder {
+      color: var(--c-5);
+    }
+  }
+  &.error {
+    label {
+      color: var(--c-red);
+    }
+    input {
+      border-color: var(--c-red);
+    }
+  }
+
+  &.success {
+    label {
+      color: var(--c-green);
+    }
+    input {
+      border-color: var(--c-green);
+    }
+  }
+
+  &.warning {
+    label {
+      color: var(--c-yellow);
+    }
+    input {
+      border-color: var(--c-yellow);
+    }
+  }
+
+  &.disabled {
+    label {
+      color: var(--c-gray);
+    }
+    input {
+      border-color: var(--c-gray);
+    }
+  }
+
+}

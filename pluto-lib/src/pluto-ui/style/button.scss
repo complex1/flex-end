@@ -1,0 +1,218 @@
+@for $i from 1 through 10 {
+
+  .btn-#{$i} {
+    background-color: var(--c-#{$i});
+    position: relative;
+    @if $i < 5 {
+      color: var(--c-10);
+    } @else {
+      color: var(--c-1);
+    }
+    font-size: 1em;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.25em;
+    padding: 0.35em 0.7em;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    &:hover {
+      background: var(--c-#{$i + 1}) radial-gradient(circle, transparent 1%, var(--c-#{$i}) 1%) center/15000%;
+    }
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      &:active {
+        background-color: var(--c-#{$i});
+      }
+    }
+    background-position: center;
+    transition: background 0.4s ease-in-out;
+    &:active {
+      @if $i < 5 {
+        background-color: var(--c-10);
+      } @else {
+        background-color: var(--c-1);
+      }
+      background-size: 100%;
+      transition: background 0s ease-in-out;; 
+    }
+  }
+  .btn-outline-#{$i} {
+    background-color: transparent;
+    color: var(--c-#{$i});
+    border: 1px solid var(--c-#{$i});
+    &:hover {
+      background: var(--c-#{$i}) radial-gradient(circle, transparent 1%, var(--c-#{$i}) 1%) center/15000%;
+      @if $i < 5 {
+        color: var(--c-10);
+      } @else {
+        color: var(--c-1);
+      }
+    }
+  }
+}
+
+.btn-red {
+  background-color: var(--c-red);
+  position: relative;
+  color: var(--c-10);
+  font-size: 1em;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.25em;
+  padding: 0.35em 0.7em;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background: var(--c-red) radial-gradient(circle, transparent 1%, var(--c-red) 1%) center/15000%;
+  }
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    &:active {
+      background-color: var(--c-red);
+    }
+  }
+  background-position: center;
+  transition: background 0.4s ease-in-out;
+  &:active {
+    background-color: var(--c-10);
+    background-size: 100%;
+    transition: background 0s ease-in-out;; 
+  }
+}
+
+.btn-outline-red {
+  background-color: transparent;
+  color: var(--c-red);
+  border: 1px solid var(--c-red);
+  &:hover {
+    background: var(--c-red) radial-gradient(circle, transparent 1%, var(--c-red) 1%) center/15000%;
+    color: var(--c-10);
+  }
+}
+
+.btn-green {
+  background-color: var(--c-green);
+  position: relative;
+  color: var(--c-1);
+  font-size: 1em;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.25em;
+  padding: 0.35em 0.7em;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background: var(--c-green) radial-gradient(circle, transparent 1%, var(--c-green) 1%) center/15000%;
+  }
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    &:active {
+      background-color: var(--c-green);
+    }
+  }
+  background-position: center;
+  transition: background 0.4s ease-in-out;
+  &:active {
+    background-color: var(--c-1);
+    background-size: 100%;
+    transition: background 0s ease-in-out;; 
+  }
+}
+
+.btn-outline-green {
+  background-color: transparent;
+  color: var(--c-green);
+  border: 1px solid var(--c-green);
+  &:hover {
+    background: var(--c-green) radial-gradient(circle, transparent 1%, var(--c-green) 1%) center/15000%;
+    color: var(--c-1);
+  }
+}
+
+.btn-blue {
+  background-color: var(--c-blue);
+  position: relative;
+  color: var(--c-10);
+  font-size: 1em;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.25em;
+  padding: 0.35em 0.7em;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background: var(--c-blue) radial-gradient(circle, transparent 1%, var(--c-blue) 1%) center/15000%;
+  }
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    &:active {
+      background-color: var(--c-blue);
+    }
+  }
+  background-position: center;
+  transition: background 0.4s ease-in-out;
+  &:active {
+    background-color: var(--c-10);
+    background-size: 100%;
+    transition: background 0s ease-in-out;; 
+  }
+}
+
+.btn-outline-blue {
+  background-color: transparent;
+  color: var(--c-blue);
+  border: 1px solid var(--c-blue);
+  &:hover {
+    background: var(--c-blue) radial-gradient(circle, transparent 1%, var(--c-blue) 1%) center/15000%;
+    color: var(--c-10);
+  }
+}
+
+.btn-yellow {
+  background-color: var(--c-yellow);
+  position: relative;
+  color: var(--c-1);
+  font-size: 1em;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.25em;
+  padding: 0.35em 0.7em;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background: var(--c-yellow) radial-gradient(circle, transparent 1%, var(--c-yellow) 1%) center/15000%;
+  }
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    &:active {
+      background-color: var(--c-yellow);
+    }
+  }
+  background-position: center;
+  transition: background 0.4s ease-in-out;
+  &:active {
+    background-color: var(--c-1);
+    background-size: 100%;
+    transition: background 0s ease-in-out;; 
+  }
+}
+
+.btn-outline-yellow {
+  background-color: transparent;
+  color: var(--c-yellow);
+  border: 1px solid var(--c-yellow);
+  &:hover {
+    background: var(--c-yellow) radial-gradient(circle, transparent 1%, var(--c-yellow) 1%) center/15000%;
+    color: var(--c-1);
+  }
+}

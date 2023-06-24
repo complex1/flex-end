@@ -1,0 +1,97 @@
+
+.bg-c-1 {
+  background-color: var(--c-1);
+}
+.bg-c-2 {
+  background-color: var(--c-2);
+}
+.bg-c-3 {
+  background-color: var(--c-3);
+}
+.bg-c-4 {
+  background-color: var(--c-4);
+}
+.bg-c-5 {
+  background-color: var(--c-5);
+}
+.bg-c-6 {
+  background-color: var(--c-6);
+}
+.bg-c-7 {
+  background-color: var(--c-7);
+}
+.bg-c-8 {
+  background-color: var(--c-8);
+}
+.bg-c-9 {
+  background-color: var(--c-9);
+}
+.bg-c-10 {
+  background-color: var(--c-10);
+}
+.bg-c-red {
+  background-color: var(--c-red);
+}
+.bg-c-green {
+  background-color: var(--c-green);
+}
+.bg-c-blue {
+  background-color: var(--c-blue);
+}
+.bg-c-yellow {
+  background-color: var(--c-yellow);
+}
+
+.br-1 {
+  border-radius: var(--border-radius-1);
+}
+.br-2 {
+  border-radius: var(--border-radius-2);
+}
+.br-3 {
+  border-radius: var(--border-radius-3);
+}
+.br-4 {
+  border-radius: var(--border-radius-4);
+}
+.br-chip {
+  border-radius: 2em;
+}
+.br-circle {
+  border-radius: 50%;
+}
+.shadow-1 {
+  box-shadow: var(--shadow-1);
+}
+.shadow-2 {
+  box-shadow: var(--shadow-2);
+}
+.shadow-3 {
+  box-shadow: var(--shadow-3);
+}
+.shadow-4 {
+  box-shadow: var(--shadow-4);
+}
+
+.fh {
+  height: 100%;
+}
+.fw {
+  width: 100%;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}

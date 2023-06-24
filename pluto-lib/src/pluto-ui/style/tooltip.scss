@@ -1,0 +1,64 @@
+.tooltip {
+  position: fixed;
+  display: inline-block;
+  max-width: 300px;
+  font-size: 12px;
+  filter: drop-shadow(var(--shadow-4));
+  border-radius: 0.3rem;
+  background-color: var(--white);
+  padding: 0.2rem 0.4rem;
+  color: var(--black);
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  pointer-events: none;
+
+  // add notch to tooltip
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0.3rem 0.3rem 0 0.3rem;
+    border-color: var(--white) transparent transparent transparent;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &.top::after {
+    border-width: 0.3rem 0.3rem 0 0.3rem;
+    border-color: var(--white) transparent transparent transparent;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &.bottom::after {
+    border-width: 0 0.3rem 0.3rem 0.3rem;
+    border-color: transparent transparent var(--white) transparent;
+    top: -0.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &.left::after {
+    border-width: 0.3rem 0rem 0.3rem 0.3rem;
+    border-color: transparent transparent transparent var(--white);
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+  }
+  &.right::after {
+    border-width: 0.3rem 0 0.3rem 0.3rem;
+    border-color: transparent transparent transparent var(--white);
+    top: 50%;
+    left: 0;
+    transform: translateY(50%);
+  }
+
+
+  &.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
